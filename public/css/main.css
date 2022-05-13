@@ -1,0 +1,43 @@
+* {
+    font-family: 'Abril Fatface', cursive;
+}
+
+.orange {
+    color : #ff7700;
+}
+
+.cross-icon {
+    font-size: 50px;
+}
+
+.img-cover {
+    object-fit: cover;
+}
+
+.img-height {
+    height: 220px;
+    object-fit: cover;
+}
+
+.owl-item > .item > img {
+height: 380px;
+object-fit: contain;
+}
+
+@media screen and (min-width: 589px)
+{
+    .img-height {
+        height: 350px;
+    }
+}
+
+@media screen and (min-width: 768px)
+{
+    .border-radius-img {
+        border-radius: 0% 100% 41% 59% / 100% 0% 100% 0% ;
+        object-fit: cover;
+    } 
+    .img-height {
+        height: 270px;
+    }
+}
