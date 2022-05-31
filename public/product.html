@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Produits - Bombers original Customisation</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <meta name="description" content="" >
+        <link rel="icon" type="image/png" sizes="192x192" href="./Favicon.png">
+        <meta name="robots" content="index, follow">
+
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arvo:wght@700&family=Lato&family=Playfair+Display&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="./js/owl.carousel.min.js"></script>
+        <script src="https://kit.fontawesome.com/cbfc23503c.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+        <script src="./js/database.js"></script>
+        <script defer src="./js/product.js"></script>
+        
+    </head>
+    <body>
+        <header>
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <a class="navbar-brand" href="./index.html">
+                        <img class="img-fluid" src="./img/logo_bombers2.png" alt="Logo Bombers">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav d-flex column">
+                            <li class="nav-item active"></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Accueil</a>
+                            </li>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Produits</a>
+                                <div class="dropdown-menu">
+                                    <a href="./product.html?id=ORIGINAL" class="dropdown-item">
+                                        <div class="d-flex justify-content-start align-items-center" >
+                                            <img src="./img/ORIGINAL/BLACK.png" alt="" style="width: 25px;">
+                                            <p class="my-auto px-5">ORIGINAL</p>
+                                        </div>
+                                    </a>
+                                    <a href="./product.html?id=MA-X" class="dropdown-item">
+                                        <div class="d-flex justify-content-start align-items-center" >
+                                            <img src="./img/MA-X/NAVY.png" alt="" style="width: 25px;">
+                                            <p class="my-auto px-5">MA-XL</p>
+                                        </div>
+                                    </a>
+                                    <a href="./product.html?id=MA-1" class="dropdown-item">
+                                        <div class="d-flex justify-content-start align-items-center" >
+                                            <img src="./img/MA-1/NAVY.png" alt="" style="width: 25px;">
+                                            <p class="my-auto px-5">MA-1</p>
+                                        </div>
+                                    </a>
+                                    <a href="./product.html?id=THUNDER" class="dropdown-item">
+                                        <div class="d-flex justify-content-start align-items-center" >
+                                            <img src="./img/THUNDER/YELLOW.png" alt="" style="width: 25px;">
+                                            <p class="my-auto px-5">THUNDER</p>
+                                        </div>
+                                    </a>
+                                    <a href="./product.html?id=TRACK-PRINT" class="dropdown-item">
+                                        <div class="d-flex justify-content-start align-items-center" >
+                                            <img src="./img/TRACK-PRINT/BLACK.png" alt="" style="width: 25px;">
+                                            <p class="my-auto px-5">TRACK-PRINT</p>
+                                        </div>
+                                    </a>
+                                    <a href="./product.html?id=SNAPPER" class="dropdown-item">
+                                        <div class="d-flex justify-content-start align-items-center" >
+                                            <img src="./img/SNAPPER/NAVY.png" alt="" style="width: 25px;">
+                                            <p class="my-auto px-5">SNAPPER</p>
+                                        </div>
+                                    </a>
+                                    <a href="./product.html?id=PARSONS" class="dropdown-item">
+                                        <div class="d-flex justify-content-start align-items-center" >
+                                            <img src="./img/PARSONS/NAVY.png" alt="" style="width: 25px;">
+                                            <p class="my-auto px-5">PARSONS</p>
+                                        </div>
+                                    </a>
+                                    <a href="./product.html?id=LETTERMAN" class="dropdown-item">
+                                        <div class="d-flex justify-content-start align-items-center" >
+                                            <img src="./img/LETTERMAN/RED.png" alt="" style="width: 25px;">
+                                            <p class="my-auto px-5">LETTERMAN</p>
+                                        </div>
+                                    </a>
+                                    <a href="./product.html?id=GUPPY" class="dropdown-item">
+                                        <div class="d-flex justify-content-start align-items-center" >
+                                            <img src="./img/GUPPY/YELLOW.png" alt="" style="width: 25px;">
+                                            <p class="my-auto px-5">GUPPY</p>
+                                        </div>
+                                    </a>
+                                    <a href="./product.html?id=IOWA" class="dropdown-item">
+                                        <div class="d-flex justify-content-start align-items-center" >
+                                            <img src="./img/IOWA/BLACK.png" alt="" style="width: 25px;">
+                                            <p class="my-auto px-5">IOWA</p>
+                                        </div>
+                                    </a>
+                                    <a href="./product.html?id=TRAVELLER" class="dropdown-item">
+                                        <div class="d-flex justify-content-start align-items-center" >
+                                            <img src="./img/TRAVELLER/KHAKI.png" alt="" style="width: 25px;">
+                                            <p class="my-aut px-5">TRAVELLER</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="product-mainContainer">
+            <section>
+                <h1 class="overlined text-center py-5" id="productName"></h1>
+                <div class="col-10 m-auto pt-5">
+                    <div class="d-flex justify-content-center">
+                        <img class="img-fluid" id="productImage">
+                    </div>        
+
+                    <h2 class="text-center pt-5">Couleurs disponibles</h2>
+                    <div class=" carousel-wrap py-5">
+                        <div id="product-carousel" class="owl-carousel owl-theme owl-loaded">
+                            <div class="owl-stage-outer">
+                                <div id="owlStage" class="owl-stage">
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </section>
+                
+            <aside class="col">
+                <div class="container my-5">
+                    <h2 class="py-3 orange-bg white text-center" id="productDescription">Description</h2>
+                    <div class="container description-container">
+                        <h3 class="py-3 text-center" id="productSizes"></h3>
+                        <h3 class="py-3 text-center" id="productComposition"></h3>
+                        <h3 class="py-3 text-center" id="productWholesalePrice"></h3>
+                        <h3 class="py-3 text-center" id="productRetailPrice"></h3> 
+                    </div>
+                </div>
+            </aside>
+        </main>
+        <footer class="footer-section bg-light">
+            <div class="py-4 px-2">
+                <div class="footer-contact d-flex justify-content-around flex-wrap">
+                            <img class="img-fluid contact-logo mx-2" src="./img/Logo_bombers.jpeg" alt="logo_bombers2">
+                        <div class="col align-self-center px-3">
+                                <h4>Bombers Original Partenariats</h4>
+                                <span style="white-space: nowrap">4 Avenue du Valquiou <br/> 93200 Tremblay-en-France</span>
+                        </div>
+                    <!-- <div class="footer-social-icon col align-self-start text-center">
+                        <h4>Suivez-nous</h4>
+                        <a href="#"><i class="fa-brands fa-linkedin-in linkedin-bg"></i></a>
+                    </div> -->
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
