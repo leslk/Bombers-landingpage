@@ -60,7 +60,12 @@ a:hover:visited {
     font-size: 30px;
 }
 
-.owl-item > .item > img {
+.dropdown-menu {
+    border: none;
+    background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity));
+}
+
+.owl-item > a > .item {
     height: 380px;
     object-fit: contain;
 }
@@ -168,32 +173,30 @@ label {
     background: hsl(28, 98%, 63%);
 }
 
-.footer-social-icon i {
-    font-size: 30px;
-    height: 60px;
-    width: 60px;
-    text-align: center;
-    line-height: 58px;
-    border-radius: 50%;
-  }
-
-.footer-social-icon i:hover {
-    transform: scale(1.2);
-    transition: .3s ease-in-out;
+.social-footer .social-footer-icons ul {
+    padding: 0;
+    margin: 0;
 }
-
-.linkedin-bg{
+  
+.social-footer .social-footer-icons li {
+    list-style: none;
+    margin-right: 0;
+}
+  
+.social-footer .social-footer-icons .fa-brands {
     color: white;
-    background: #3B5998;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+    background-color: #ff7700;
 }
-
-.map-icon {
-    font-size: 40px;
-    color: #ff7700;
-}
-
-.contact-logo {
-    width: 100px;
+  
+.social-footer .social-footer-icons .fa-brands:hover {
+    transform: scale(1.2);
+    transition: color 0.3s ease-in;
 }
 
 
@@ -203,11 +206,6 @@ label {
         border-radius: 10% 0% 28% 0% / 0% 69% 30% 10% ;
         object-fit: cover;
     } 
-
-
-.owl-carousel .owl-item .item-embroidery {
-    height: 20px;
-}
 
     #productImage {
         max-height: 600px;

@@ -13,6 +13,7 @@ function displayProduct() {
     document.getElementById("productWholesalePrice").textContent = "Wholesale price : " + product.wholesalePrice;
     document.getElementById("productRetailPrice").textContent = "Retail price : " + product.retailPrice;
     document.getElementById("productImage").setAttribute("src", "./img/" + product.name + "/" + product.colors[0] + ".png");
+    document.getElementById("productImage").setAttribute("alt", "veste bombers " + product.name + " couleur " + product.colors[0]);
 }
 
 function createCarousel() {
@@ -24,12 +25,13 @@ function createCarousel() {
         owlStageOuterCarousel.appendChild(owlItem);
         let itemContainer = document.createElement("a");
         itemContainer.setAttribute("id", "itemContainer");
-        itemContainer.setAttribute("href", "product.html?id=" + productName)
+        itemContainer.setAttribute("href", "./product?id=" + productName)
         owlItem.appendChild(itemContainer);
         let item = document.createElement("img");
         let itemAttributes = [
             ["class", "item img-fluid"],
-            ["src", "./img/" + product.name +"/" + color + ".png"]
+            ["src", "./img/" + product.name +"/" + color + ".png"],
+            ["alt", product.description + "couleur " + color]
         ];
         setAttributes(item, itemAttributes);
         itemContainer.appendChild(item);

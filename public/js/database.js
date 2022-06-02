@@ -13,6 +13,7 @@ let products = [
             "RED",
             "BLACK"
         ],
+        description: "veste bombers original",
         size : "S, M, L, XL, XXL, XXXL",
         composition : "100% polyester",
         wholesalePrice : "58€",
@@ -29,6 +30,7 @@ let products = [
             "NAVY",
             "INDIGO"
         ],
+        description: "veste bombers MA-X",
         size : "S, M, L, XL, XXL, XXXL",
         composition : "100% polyester",
         wholesalePrice : "50€",
@@ -49,76 +51,11 @@ let products = [
             "RED",
             "WHITE"
         ],
+        description: "veste bombers MA-1",
         size : "S, M, L, XL, XXL, XXXL",
         composition : "100% polyester",
         wholesalePrice : "48€",
         retailPrice : "120€"
-    },
-    {
-        name : "GUPPY",
-        colors : [
-            "BLACK",
-            "BLUE",
-            "KHAKI",
-            "PINK",
-            "YELLOW",
-        ],
-        size : "S, M, L, XL, XXL",
-        composition : "100% polyester",
-        wholesalePrice : "48€",
-        retailPrice : "129€"
-    },
-    {
-        name : "LETTERMAN",
-        colors : [
-            "BLACK",
-            "RED",
-        ],
-        size : "S, M, L, XL, XXL, XXXL",
-        composition : "laine et cuir synthétique",
-        wholesalePrice : "60€",
-        retailPrice : "149€"
-    },
-    {
-        name : "IOWA",
-        colors : [
-            "BLACK",
-            "KHAKI",
-            "NAVY",
-        ],
-        size : "S, M, L, XL, XXL, XXXL",
-        composition : "100% polyester & duvet",
-        wholesalePrice : "84€",
-        retailPrice : "210€"
-    },
-    {
-        name : "PARSONS",
-        colors : [
-            "BLACK",
-            "KHAKI",
-            "NAVY",
-        ],
-        size : "S, M, L, XL, XXL, XXXL",
-        composition : "100% polyester",
-        wholesalePrice : "71€",
-        retailPrice : "179€"
-    },
-    {
-        name : "SNAPPER",
-        colors : [
-            "BLACK",
-            "KHAKI",
-            "CAMEL",
-            "D-RED",
-            "MUSTARD",
-            "PINK",
-            "BEIGE",
-            "WHITE"
-        ],
-        size : "S, M, L, XL, XXL, XXXL",
-        composition : "100% polyester",
-        wholesalePrice : "56€",
-        retailPrice : "139€"
     },
     {
         name : "THUNDER",
@@ -127,6 +64,7 @@ let products = [
             "RED",
             "GREEN",
         ],
+        description: "veste bombers thunder",
         size : "S, M, L, XL, XXL, XXXL",
         composition : "50% polyester & 50% polyester",
         wholesalePrice : "78€",
@@ -141,10 +79,82 @@ let products = [
             "KHAKI",
             "BEIGE"
         ],
+        description: "veste bombers track-print",
         size : "S, M, L, XL, XXL, XXXL",
         composition : "50% polyester & 50% polyester",
         wholesalePrice : "74€",
         retailPrice : "185€"
+    },
+    {
+        name : "SNAPPER",
+        colors : [
+            "BLACK",
+            "KHAKI",
+            "CAMEL",
+            "D-RED",
+            "MUSTARD",
+            "PINK",
+            "BEIGE",
+            "WHITE"
+        ],
+        description: "veste bombers snapper",
+        size : "S, M, L, XL, XXL, XXXL",
+        composition : "100% polyester",
+        wholesalePrice : "56€",
+        retailPrice : "139€"
+    },
+    {
+        name : "PARSONS",
+        colors : [
+            "BLACK",
+            "KHAKI",
+            "NAVY",
+        ],
+        description: "veste bombers parsons",
+        size : "S, M, L, XL, XXL, XXXL",
+        composition : "100% polyester",
+        wholesalePrice : "71€",
+        retailPrice : "179€"
+    },
+    {
+        name : "LETTERMAN",
+        colors : [
+            "BLACK",
+            "RED",
+        ],
+        description: "veste bombers letterman",
+        size : "S, M, L, XL, XXL, XXXL",
+        composition : "laine et cuir synthétique",
+        wholesalePrice : "60€",
+        retailPrice : "149€"
+    },
+    {
+        name : "IOWA",
+        colors : [
+            "BLACK",
+            "KHAKI",
+            "NAVY",
+        ],
+        description: "veste bombers iowa",
+        size : "S, M, L, XL, XXL, XXXL",
+        composition : "100% polyester & duvet",
+        wholesalePrice : "84€",
+        retailPrice : "210€"
+    },
+    {
+        name : "GUPPY",
+        colors : [
+            "BLACK",
+            "BLUE",
+            "KHAKI",
+            "PINK",
+            "YELLOW",
+        ],
+        description: "veste bombers guppy",
+        size : "S, M, L, XL, XXL",
+        composition : "100% polyester",
+        wholesalePrice : "48€",
+        retailPrice : "129€"
     },
     {
         name : "TRAVELLER",
@@ -152,6 +162,7 @@ let products = [
             "BLACK",
             "KHAKI",
         ],
+        description: "sac bombers traveller",
         size : "One size fits all",
         composition : "100% polyester",
         wholesalePrice : "37€",
