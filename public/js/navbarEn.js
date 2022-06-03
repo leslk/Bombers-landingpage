@@ -15,7 +15,7 @@ function createDropDownMenu() {
         dropdownItem.appendChild(item);
         let image = document.createElement("img");
         let imageAttributes = [
-            ["src", "./img/" + product.name +"/" + product.colors[1] + ".png"],
+            ["src", "../img/" + product.name +"/" + product.colors[1] + ".png"],
             ["alt", product.description + "couleur " + product.colors[1]],
             ["style", "width: 25px;"],
         ]

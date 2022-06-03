@@ -2,7 +2,7 @@ let productName = new URL(window.location.href).searchParams.get("id");
 let itemsNumber = 0;
 let product = products.find(element => productName == element.name);
 let pageLink = document.getElementById("langageLink")
-pageLink.setAttribute("href", "../en/product.html?id=" + productName);
+pageLink.setAttribute("href", "./en/product?id=" + productName);
 
 
 displayProduct();
@@ -14,7 +14,7 @@ function displayProduct() {
     document.getElementById("productComposition").textContent = "Composition : " + product.composition;
     document.getElementById("productWholesalePrice").textContent = "Wholesale price : " + product.wholesalePrice;
     document.getElementById("productRetailPrice").textContent = "Retail price : " + product.retailPrice;
-    document.getElementById("productImage").setAttribute("src", "../img/" + product.name + "/" + product.colors[0] + ".png");
+    document.getElementById("productImage").setAttribute("src", "./img/" + product.name + "/" + product.colors[0] + ".png");
     document.getElementById("productImage").setAttribute("alt", "veste bombers " + product.name + " couleur " + product.colors[0]);
 }
 
@@ -32,7 +32,7 @@ function createCarousel() {
         let item = document.createElement("img");
         let itemAttributes = [
             ["class", "item img-fluid"],
-            ["src", "../img/" + product.name +"/" + color + ".png"],
+            ["src", "./img/" + product.name +"/" + color + ".png"],
             ["alt", product.description + "couleur " + color]
         ];
         setAttributes(item, itemAttributes);

@@ -2,7 +2,7 @@ let productName = new URL(window.location.href).searchParams.get("id");
 let itemsNumber = 0;
 let product = products.find(element => productName == element.name);
 let pageLink = document.getElementById("langageLink")
-pageLink.setAttribute("href", "../en/product?id=" + productName);
+pageLink.setAttribute("href", "./../product?id=" + productName);
 
 
 displayProduct();
