@@ -45,7 +45,7 @@ function createEmbroideryCarousel() {
         let itemAttributes = [
             ["style", "height: 300px; object-fit: contain"],
             ["class", "img-fluid "],
-            ["src", "./img/embroidery/" + embroidery.url],
+            ["src", "../img/embroidery/" + embroidery.url],
             ["alt", embroidery.description]
         ];
         setAttributes(item, itemAttributes);
@@ -69,7 +69,7 @@ function createProductsCarousel() {
         let item = document.createElement("img");
         let itemAttributes = [
             ["class", "item img-fluid"],
-            ["src", "./img/" + product.name +"/" + product.colors[0] + ".png"],
+            ["src", "../img/" + product.name +"/" + product.colors[0] + ".png"],
             ["alt", product.description + "couleur " + product.colors[0]]
         ];
         setAttributes(item, itemAttributes);

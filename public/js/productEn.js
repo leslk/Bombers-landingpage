@@ -2,24 +2,24 @@ let productName = new URL(window.location.href).searchParams.get("id");
 let itemsNumber = 0;
 let product = products.find(element => productName == element.name);
 let pageLink = document.getElementById("langageLink")
-pageLink.setAttribute("href", "../en/product.html?id=" + productName);
+pageLink.setAttribute("href", "../en/product?id=" + productName);
 
 
 displayProduct();
 createCarousel();
 
 function displayProduct() {
-    document.getElementById("productName").textContent = "MODELE " + product.name;
-    document.getElementById("productSizes").textContent ="Tailles disponibles : " + product.size;
+    document.getElementById("productName").textContent = product.name + " MODEL" ;
+    document.getElementById("productSizes").textContent ="Available sizes : " + product.size;
     document.getElementById("productComposition").textContent = "Composition : " + product.composition;
     document.getElementById("productWholesalePrice").textContent = "Wholesale price : " + product.wholesalePrice;
     document.getElementById("productRetailPrice").textContent = "Retail price : " + product.retailPrice;
     document.getElementById("productImage").setAttribute("src", "../img/" + product.name + "/" + product.colors[0] + ".png");
-    document.getElementById("productImage").setAttribute("alt", "veste bombers " + product.name + " couleur " + product.colors[0]);
+    document.getElementById("productImage").setAttribute("alt", product.name + " bombers jacket " + product.colors[0] + " colour");
 }
 
 function createCarousel() {
-    let owlStageOuterCarousel = document.getElementById("owlStage");
+    let owlStageOuterCarousel = document.getElementById("owlStageEn");
     itemsNumber = product.colors.length;
     for (let color of product.colors) {
         let owlItem = document.createElement("div");
@@ -33,7 +33,7 @@ function createCarousel() {
         let itemAttributes = [
             ["class", "item img-fluid"],
             ["src", "../img/" + product.name +"/" + color + ".png"],
-            ["alt", product.description + "couleur " + color]
+            ["alt", product.descriptionEn + "couleur " + color]
         ];
         setAttributes(item, itemAttributes);
         itemContainer.appendChild(item);
@@ -96,5 +96,3 @@ $("#product-carousel").click(function(event) {
         document.getElementById("productImage").setAttribute("src", newMainProductPath);
     }
 });
-
-    
